@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Andrei",
+      "surname": "Neagoi",
+      "is_online": true,
+      "messages": [
+        {
+          "from": 2,
+          "date": "2019-01-28T12:40:36.129Z",
+          "queue": 1,
+          "text": "Hello Dude!!!"
+        },
+        {
+          "from": 2,
+          "date": "2019-02-28T12:40:36.129Z",
+          "queue": 3,
+          "text": "Hope you're doing well!!!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "James",
+      "surname": "Bond",
+      "is_online": true,
+      "messages": [
+        {
+          "from": 1,
+          "date": "2019-01-28T12:40:36.129Z",
+          "queue": 2,
+          "text": "Hi dude!!!"
+        },
+        {
+          "from": 1,
+          "date": "2019-02-28T12:40:36.129Z",
+          "queue": 4,
+          "text": "Perfect, what's baout you?!!!"
+        }
+      ]
+    }
+  ]
+}

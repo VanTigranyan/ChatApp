@@ -1,0 +1,14 @@
+<div class="chat-item" [ngClass]="{'active': selected}">
+  <div class="avatar">
+    <img [src]="img" alt="avatar">
+  </div>
+  <div class="user-info">
+    <strong class="user-name">
+      {{name}}
+    </strong>
+    <p class="last-message">
+      {{message}}
+    </p>
+  </div>
+  <mat-icon class="indicator" *ngIf="is_online">brightness_1</mat-icon>
+</div>

@@ -1,0 +1,15 @@
+<div class="sidenav-container">
+  <div class="sidenav">
+    <ng-template ngFor let-chat let-i="index" [ngForOf]="conversations">
+      <app-chat-item 
+        name={{chat.user.name}}
+        is_online={{chat.user.is_online}}
+        img = {{chat.user.avatarlink}}
+        message = {{chat.conversation.messages[chat.conversation.messages.length-1].text}}
+        [selected] = "selectedChat === i"
+        (click) = "selectChat(chat, i)"
+      >
+      </app-chat-item>
+    </ng-template>
+  </div>
+</div>

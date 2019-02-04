@@ -1,0 +1,29 @@
+<div class="mesgs">
+    <div class="msg_history">
+      <ng-template ngFor let-message [ngForOf]="chat.conversation.messages">
+        <ng-template [ngIf]="message?.from !== chat.user.id">
+          <app-outcoming
+            [message]="message"
+          >
+
+          </app-outcoming>
+        </ng-template>
+        <ng-template [ngIf]="message?.from === chat?.user.id">
+            <app-incoming
+            [message]="message"
+            [from]="chat?.user"
+            >
+
+            </app-incoming>
+          </ng-template>
+      </ng-template>
+    </div>
+    <div class="type_msg">
+      <div class="input_msg_write">
+        <input type="text" class="write_msg" placeholder="Type a message" [formControl]="message" #input/>
+        <button class="msg_send_btn" type="button" [disabled]="input.value.length <= 0" (click)="sendMessage()">
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>

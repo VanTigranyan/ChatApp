@@ -1,0 +1,16 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  .sidenav {
+    flex-grow: 1;
+  }
+  .messages {
+    flex-grow: 11;
+    display: flex;
+    justify-content: center;
+    background: #F2F7F7;
+  }
+}
